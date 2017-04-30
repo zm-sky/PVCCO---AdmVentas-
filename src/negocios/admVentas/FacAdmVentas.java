@@ -23,12 +23,12 @@ public class FacAdmVentas implements IntAdmVentas{
     }
     
     @Override
-    public void realizarVenta(List<Talla> tallas, Usuario usuario, float totalVenta) {
-        admVentas.realizarVenta(tallas, usuario, totalVenta);
+    public void realizarVenta(List<Talla> tallas, List<Integer> cantidades,  float totalVenta) {
+        admVentas.realizarVenta(tallas, cantidades, totalVenta);
     }
 
     @Override
-    public void agregarVentaPorApartadoLiquidado(List<Talla> tallas, float cantidadPagada) {
+    public void agregarVentaPorApartadoLiquidado(List<Talla> tallas, List<Integer> cantidades, float cantidadPagada) {
         admVentas.agregarVentaPorApartadoLiquidado(tallas, cantidadPagada);
     }
     
