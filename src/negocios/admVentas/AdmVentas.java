@@ -8,28 +8,21 @@ package negocios.admVentas;
 import java.util.List;
 import objetosNegocio.Talla;
 import objetosNegocio.Usuario;
-import pvcco.interfaces.IntAdmVentas;
 
 /**
  *
  * @author zippy
  */
-public class FacAdmVentas implements IntAdmVentas{
-
-    private AdmVentas admVentas;
-    
-    public FacAdmVentas(){
-        admVentas = new AdmVentas();
+public class AdmVentas {
+    protected AdmVentas(){
+        
     }
     
-    @Override
     public void realizarVenta(List<Talla> tallas, Usuario usuario, float totalVenta) {
-        admVentas.realizarVenta(tallas, usuario, totalVenta);
+        
     }
 
-    @Override
     public void agregarVentaPorApartadoLiquidado(List<Talla> tallas, float cantidadPagada) {
-        admVentas.agregarVentaPorApartadoLiquidado(tallas, cantidadPagada);
+        
     }
-    
 }
